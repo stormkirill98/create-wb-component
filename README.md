@@ -8,7 +8,7 @@
 Новый компонент будет экспортирован из `components/index.ts`
 Перед запуском скрипта выберете нужную папку `components`
 
-##### Запустите команду `chmod a+x create-component.js` в этом проекте (для macos как минимум обязательно)
+##### Запустите команду `chmod a+x index.js` в этом проекте (для macos как минимум обязательно)
 
 ### Add the Script to WebStorm:
 1. Open WebStorm and go to **File > Settings**.
@@ -18,7 +18,7 @@
    * Name: `Create Component`
    * Description: `Create a new component with the required structure`
    * Program: `node`
-   * Arguments: `/Users/your-user/path-to-projects/create-component/create-component.js $FileDir$ $Prompt$`
+   * Arguments: `/Users/your-user/path-to-projects/create-wb-component/index.js $FileDir$ $Prompt$`
    * Working Directory: `$ProjectFileDir$`
 5. Click OK to save the new external tool.
 

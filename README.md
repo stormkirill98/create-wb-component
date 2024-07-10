@@ -1,6 +1,6 @@
 # Что делает скрипт
 
-Скрипт создает новый компонент в папке components следуя следующей архитектуре:\
+Скрипт создает новый компонент в папке `components` следуя следующей архитектуре:\
 **some-package\
 &nbsp;&nbsp;&nbsp;&nbsp;components\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new-component\

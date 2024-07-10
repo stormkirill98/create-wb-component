@@ -1,12 +1,17 @@
+# Что делает скрипт
+
 Скрипт создает новый компонент в папке components следуя следующей архитектуре:\
 **some-package\
 &nbsp;&nbsp;&nbsp;&nbsp;components\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new-component\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.module.scss\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.tsx\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.ts**
-Новый компонент будет экспортирован из `components/index.ts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.ts**\
+
+Новый компонент будет экспортирован из `components/index.ts`\
 Перед запуском скрипта выберете нужную папку `components`
+
+# Как запустить скрипт в webstorm
 
 ##### Запустите команду `chmod a+x index.js` в этом проекте (для macos как минимум обязательно)
 

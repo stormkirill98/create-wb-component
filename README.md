@@ -33,4 +33,4 @@
 2. Go to **File > Settings > Keymap**.
 3. In the search bar, type **Create Component** to find your external tool.
 4. Right-click on it and select **Add Keyboard Shortcut**.
-5. Choose your preferred shortcut and click OK.
+5. Choose your preferred shortcut (⌘ + ⇧ Shift + W) and click OK.

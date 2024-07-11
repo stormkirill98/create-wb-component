@@ -26,10 +26,10 @@ const BLOCK_NAME = 'ComponentName';
 const cn = classnames.bind(styles);
 
 export const ComponentName = () => {
-return (
-   <div className={cn(BLOCK_NAME)}>
+  return (
+    <div className={cn(BLOCK_NAME)}>
       ComponentName
-   </div>
+    </div>
   );
 };
 ```

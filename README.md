@@ -47,7 +47,7 @@ export const ComponentName = () => {
 export * from './component-name';
 ```
 
-
+***
 # Как запустить скрипт в webstorm
 
 ##### Запустите команду `chmod a+x index.js` в этом проекте (для macos как минимум обязательно)

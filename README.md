@@ -9,7 +9,41 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.ts**
 
 Новый компонент будет экспортирован из `components/index.ts`\
-Перед запуском скрипта выберете нужную папку `components`
+Скрипт принимает 2 аргумента:
+1. Путь до папки `components`
+2. Название компонента в `kebab-case`
+
+Если запускать через интерфейс **webstorm**, то 1ый аргумент будет автоматически задаваться, а для заполнения 2-го будет модалка с инпутом
+
+Созданные файлы заполнены следующей структурой:
+
+##### component-name/index.tsx
+```tsx
+import classnames from 'classnames/bind';
+import styles from './index.module.scss';
+
+const BLOCK_NAME = 'ComponentName';
+const cn = classnames.bind(styles);
+
+export const ComponentName = () => {
+return (
+   <div className={cn(BLOCK_NAME)}>
+      ComponentName
+   </div>
+  );
+};
+```
+##### component-name/index.scss
+```scss
+.ComponentName {
+   display: block;
+}
+```
+##### components/index.ts
+```ts
+export * from './component-name';
+```
+
 
 # Как запустить скрипт в webstorm
 

@@ -1,22 +1,25 @@
 # Что делает скрипт
 
-Скрипт создает новый компонент в папке `components` следуя следующей архитектуре:\
-**some-package\
-&nbsp;&nbsp;&nbsp;&nbsp;components\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new-component\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.module.scss\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.tsx\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.ts**
-
+Скрипт создает новый компонент в папке `components` следуя следующей архитектуре:
+```
+some-package
+   components
+      new-component
+         index.module.scss
+         index.tsx
+      index.ts
+```
 Новый компонент будет экспортирован из `components/index.ts`\
-Скрипт принимает 2 аргумента:
+
+##### Скрипт принимает 2 аргумента:
+
 1. Путь до папки `components`
 2. Название компонента в `kebab-case`
 
-Если запускать через интерфейс **webstorm**, то 1ый аргумент будет автоматически задаваться, а для заполнения 2-го будет модалка с инпутом
+> Если запускать через интерфейс **webstorm**, то 1ый аргумент будет автоматически задаваться при выборе нужной папки, а для заполнения 2-го будет модалка с инпутом
 
-Созданные файлы заполнены следующей структурой:
 
+### Созданные файлы заполнены следующей структурой:
 ##### component-name/index.tsx
 ```tsx
 import classnames from 'classnames/bind';

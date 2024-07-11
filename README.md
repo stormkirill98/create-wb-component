@@ -48,11 +48,11 @@ export * from './component-name';
 ```
 
 ***
-# Как запустить скрипт в webstorm
+# Как добавить скрипт в webstorm и запускать из интерфейса
 
 ##### Запустите команду `chmod a+x index.js` в этом проекте (для macos как минимум обязательно)
 
-### Add the Script to WebStorm:
+### Add the script to WebStorm:
 1. Open WebStorm and go to **File > Settings**.
 2. Navigate to **Tools > External Tools**.
 3. Click the + button to add a new external tool.
@@ -64,7 +64,7 @@ export * from './component-name';
    * Working Directory: `$ProjectFileDir$`
 5. Click OK to save the new external tool.
 
-### Run the Script from WebStorm:
+### Run the script from WebStorm:
 1. Right-click on the components folder or any other target directory in the Project tool window.
 2. Go to **Tools > External Tools > Create Component**.
 3. You will be prompted to enter the component name. Enter the desired name for your component.
@@ -76,3 +76,68 @@ export * from './component-name';
 3. In the search bar, type **Create Component** to find your external tool.
 4. Right-click on it and select **Add Keyboard Shortcut**.
 5. Choose your preferred shortcut (⌘ + ⇧ Shift + W) and click OK.
+
+***
+# Как добавить скрипт в vscode и запускать из интерфейса
+
+### Add the script to VSCode:
+1. Open the **Command Palette** (Ctrl+Shift+P or Cmd+Shift+P on macOS).
+2. Type **"Tasks: Open User Tasks"** or "**Tasks: Open Workspace Tasks**" and select it.
+3. This will create or open a **tasks.json** file in the .vscode directory of your workspace.
+4. Add the following configuration to your **tasks.json** file:
+```json
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+         "label": "Create Component",
+         "type": "shell",
+         "command": "node",
+         "args": [
+            "/Users/your-user/path-to-projects/create-wb-component/index.js",
+            "${fileDirname}",
+            "${input:componentName}"
+         ],
+         "group": {
+            "kind": "build",
+            "isDefault": true
+         },
+         "presentation": {
+            "echo": true,
+            "reveal": "always",
+            "focus": false,
+            "panel": "shared"
+         },
+         "problemMatcher": []
+      }
+   ],
+   "inputs": [
+      {
+         "id": "componentName",
+         "type": "promptString",
+         "description": "Enter the component name"
+      }
+   ]
+}
+```
+
+### Assign a Keyboard Shortcut:
+1. Open or Create **keybindings.json**:
+   * Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS).
+   * Type "**Preferences: Open Keyboard Shortcuts (JSON)**" and select it.
+2. Add the following configuration to your keybindings.json file:
+```json
+[
+    {
+        "key": "⌘+Shift+W",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Create Component"
+    }
+]
+```
+
+### Run the script from VSCode:
+1. Pressing the defined shortcut (e.g., ⌘+Shift+W).
+2. Enter the component name when prompted.
+
+

@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+console.log(process.argv, __dirname, __filename)
+
 const fs = require('fs');
 const path = require('path');
 

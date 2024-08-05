@@ -47,7 +47,11 @@ export const ComponentName = () => {
 export * from './component-name';
 ```
 
-***
+# Как запустить скрипт
+Запустите команду `npx create-wb-component ./src/page/my-page/components new-component`\
+`./src/page/my-page/components` - относительный путь от корня проекта до папки, в которой будет создан компонент\
+`new-component` - название нового компонента в kebab стиле
+
 # Как добавить скрипт в webstorm и запускать из интерфейса
 
 ##### Запустите команду `chmod a+x index.js` в этом проекте (для macos как минимум обязательно)

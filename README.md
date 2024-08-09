@@ -9,7 +9,7 @@ some-package
          index.tsx
       index.ts
 ```
-Новый компонент будет экспортирован из `components/index.ts`\
+Новый компонент будет экспортирован из `components/index.ts`
 
 ##### Скрипт принимает 2 аргумента:
 
